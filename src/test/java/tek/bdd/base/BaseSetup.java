@@ -9,27 +9,24 @@ public class BaseSetup {
 
     //Encapsulating driver instance
     private static WebDriver driver;
-    public void setupBrowser( ){
-        /*
-        Web Driver instance
-        Navigation to Retail
-        maximize
-        and implicitly wait
-         */
+
+    public void setupBrowser() {
         driver = new ChromeDriver();
         driver.get("https://retail.tekschool-students.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
-    public void quitBrowser(){
 
-        if (driver !=null){
+    public void quitBrowser() {
+        //null check before quit
+        if (driver != null) {
             driver.quit();
         }
-
     }
 
-    public WebDriver getDriver(){
+    //Giving read-only indirect access to driver.
+    //restrict setting new driver instance
+    public WebDriver getDriver() {
         return driver;
     }
 }
