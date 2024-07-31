@@ -24,6 +24,7 @@ import tek.bdd.utility.SeleniumUtility;
         public void closeBrowser() {
             quitBrowser();
         }
+<<<<<<< HEAD
 
         @Given("Open browser and navigate to retail")
         public void openBrowserAndNavigateToRetail() {
@@ -32,5 +33,7 @@ import tek.bdd.utility.SeleniumUtility;
         @Then("close the browser")
         public void closeTheBrowser() {
         }
+=======
+>>>>>>> origin/master
     }
 
