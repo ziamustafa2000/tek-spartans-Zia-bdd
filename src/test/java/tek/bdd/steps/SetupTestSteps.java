@@ -18,5 +18,5 @@ public class SetupTestSteps extends SeleniumUtility {
     public void validateSignInButtonEnabled() {
         boolean isSignInBtnEnabled = isElementEnabled(By.id("signinLink"));
         Assert.assertTrue(isSignInBtnEnabled);
-        }
     }
+}

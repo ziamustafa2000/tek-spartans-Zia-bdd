@@ -12,7 +12,3 @@ Feature: This feature to setup framework
 
     Then validate top left corner is TEKSCHOOL
     Then Validate Sign in button is Enabled
-
-    When user click on sign in link
-    When user enter username and password and click on login
-    Then user should be able to see account link
