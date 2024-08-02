@@ -40,10 +40,19 @@ public class SecurityTestSteps extends SeleniumUtility {
         boolean isAccountDisplayed = isElementDisplayed(HomePage.ACCOUNT_LINK);
         Assert.assertTrue(isAccountDisplayed);
     }
+
     @Then("user should see error {string}")
     public void userShouldSeeError(String expectedErrorMessage) {
         String actualErrorMessage = getElementText(SignInPage.ERROR_MESSAGE);
 
         Assert.assertEquals(expectedErrorMessage, actualErrorMessage);
     }
+
+    @When("user enter invalid@hotmail.com and {int}@Allah and click on login")
+    public void user_enter_invalid_hotmail_com_and_allah_and_click_on_login(Integer int1) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+
+    }
+
 }
