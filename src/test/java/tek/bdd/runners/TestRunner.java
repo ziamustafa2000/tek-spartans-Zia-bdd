@@ -6,13 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:features/ThursdayActivity", // Directory for Feature file
+        features = "classpath:features", // Directory for Feature file
         glue = "tek.bdd.steps", //Package for all the steps
-        dryRun = true, //set to true to scan feature for unimplemented steps
-        tags = "@Smoke",
-        plugin = {
-                "html:target/cucumber_report/index.html"
-        }
+        dryRun = false, //set to true to scan feature for unimplemented steps
+        tags = "@Regression",
+        plugin = {        "html:target/cucumber_report/index.html",
+                "json:target/jsonReport/report.json"}
 )
 public class TestRunner {
 }
