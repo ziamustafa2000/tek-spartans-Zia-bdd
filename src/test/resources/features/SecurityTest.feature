@@ -1,3 +1,4 @@
+@Regression
 Feature: Security tests scenarios
 
   Scenario: validate sign in functionality with valid credential
